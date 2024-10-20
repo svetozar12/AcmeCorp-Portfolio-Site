@@ -1,0 +1,23 @@
+.list {
+  margin: 20px 16px;
+}
+
+.list li {
+  position: relative;
+}
+.list li::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    var(--guideDashedColor),
+    var(--guideDashedColor) 50%,
+    transparent 0,
+    transparent
+  );
+  background-size: 8px 1px;
+}

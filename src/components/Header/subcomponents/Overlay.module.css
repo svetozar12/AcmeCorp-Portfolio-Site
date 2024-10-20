@@ -1,0 +1,14 @@
+.overlay {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity var(--siteMenuTransition) ease-out,
+    visibility 0s step-end var(--siteMenuTransition);
+}
+
+.overlay-open {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility step-start var(--siteMenuTransition),
+    transform ease-out var(--siteMenuTransition),
+    opacity ease-out var(--siteMenuTransition);
+}
