@@ -5,7 +5,7 @@ interface IMenuHeader {
   setOpen: Dispatch<SetStateAction<boolean>>;
 }
 
-const MenuHeader = ({ setOpen }: IMenuHeader) => {
+const MobileMenuHeader = ({ setOpen }: IMenuHeader) => {
   return (
     <div className={`flex items-center justify-between ${styles.container}`}>
       <h1
@@ -35,4 +35,4 @@ const MenuHeader = ({ setOpen }: IMenuHeader) => {
   );
 };
 
-export default MenuHeader;
+export default MobileMenuHeader;

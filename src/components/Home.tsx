@@ -1,7 +1,12 @@
 import Image from "next/image";
+import HeroGradient from "./HeroGradient/HeroGradient";
 
 function Home() {
-    return <div className="bg-black h-screen">hi</div>
+  return (
+    <div>
+      <HeroGradient />
+    </div>
+  );
 }
 
 export default Home;

@@ -1,0 +1,69 @@
+.container {
+  --gradientAngle: -12deg;
+
+  --offsetX: var(--gutterWidth);
+  --transformOriginX: -60px;
+  --sectionAngleSin: var(--angleStrongSin);
+}
+
+.container {
+  background: linear-gradient(
+    45deg,
+    #6a0dad,
+    #fc0042,
+    #009ffd,
+    #20bdff,
+    #6a0dad
+  );
+  background-size: 400% 400%;
+  animation: GradientBackground 10s ease infinite;
+}
+
+.container {
+  z-index: -1;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: calc(var(--offsetX) * -1);
+  height: 550px;
+  transform-origin: var(--transformOriginX) 100%;
+  transform: skewY(var(--gradientAngle));
+  overflow: hidden;
+  border: none;
+}
+
+.d {
+  position: absolute;
+  bottom: 0;
+  top: auto;
+  left: calc(var(--offsetX) * -1);
+  width: var(--windowWidth);
+  height: var(--gradientHeight);
+  transform-origin: var(--transformOriginX) 100%;
+  transform: skewY(var(--gradientAngle));
+  overflow: hidden;
+  border: none;
+}
+@media (min-width: 600px) {
+  .HomepageHeroGradient {
+    --transformOriginX: calc(var(--gutterWidth) * 0.8);
+  }
+}
+
+@keyframes GradientBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+  25% {
+    background-position: 50% 0%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  75% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

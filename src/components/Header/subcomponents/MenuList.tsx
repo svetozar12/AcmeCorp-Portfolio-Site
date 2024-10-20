@@ -1,6 +1,6 @@
 import styles from "./MenuList.module.css";
 
-function MenuList() {
+function MobileMenuList() {
   return (
     <nav>
       <ul className={styles.list}>
@@ -48,4 +48,4 @@ function MenuList() {
   );
 }
 
-export default MenuList;
+export default MobileMenuList;

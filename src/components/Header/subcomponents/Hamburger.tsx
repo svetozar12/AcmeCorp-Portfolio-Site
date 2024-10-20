@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { Dispatch, SetStateAction, useState } from "react";
-import Overlay from "@/components/Header/subcomponents/Overlay";
 
 interface IHamburger {
   setOpen: Dispatch<SetStateAction<boolean>>;
@@ -8,7 +7,7 @@ interface IHamburger {
 
 function Hamburger({ setOpen }: IHamburger) {
   return (
-    <button onClick={() => setOpen(true)} className="MenuButton md:hidden">
+    <button onClick={() => setOpen(true)} className="MenuButton lg:hidden">
       <svg width="16" height="10" viewBox="0 0 16 10">
         <g fillRule="evenodd" fill="white">
           <rect y="8" width="16" height="2" rx="1"></rect>
