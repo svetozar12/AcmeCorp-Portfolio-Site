@@ -1,0 +1,47 @@
+.Link,
+.LinkWhite {
+  --linkHoverOpacity: 0.8;
+  --linkWeight: var(--fontWeightBold);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  -moz-column-gap: 20px;
+  column-gap: 20px;
+  width: 100%;
+  padding: 20px 0;
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  text-align: left;
+  font-weight: bold;
+  letter-spacing: 0.2px;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.Link {
+  color: #3f4b66;
+  font: var(--fontWeightBold) 20px/1.27;
+}
+
+.LinkWhite {
+  color: white;
+  padding: 4px 20px;
+  font: 15px;
+}
+
+@media (pointer: fine) {
+  .Link:hover,
+  .LinkWhite:hover {
+    opacity: var(--linkHoverOpacity, 1);
+  }
+}
+@media (pointer: coarse) {
+  .Link:active,
+  .LinkWhite:active {
+    opacity: var(--linkHoverOpacity, 1);
+  }
+}
